@@ -34,11 +34,7 @@ public class TwitterOAuthActivity extends Activity {
         });
     }
 
-    /**
-     * OAuth”FØiŒµ–§‚É‚Í”F‰Âj‚ğŠJn‚µ‚Ü‚·B
-     *
-     * @param listener
-     */
+
     private void startAuthorize() {
         AsyncTask<Void, Void, String> task = new AsyncTask<Void, Void, String>() {
             @Override
@@ -58,7 +54,7 @@ public class TwitterOAuthActivity extends Activity {
                     Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
                     startActivity(intent);
                 } else {
-                    // ¸”sBBB
+
                 }
             }
         };
@@ -88,12 +84,12 @@ public class TwitterOAuthActivity extends Activity {
             @Override
             protected void onPostExecute(AccessToken accessToken) {
                 if (accessToken != null) {
-                    // ”FØ¬Œ÷I
-                    showToast("”FØ¬Œ÷I");
+
+                    showToast("ï¿½Fï¿½Øï¿½ï¿½ï¿½ï¿½I");
                     successOAuth(accessToken);
                 } else {
-                    // ”FØ¸”sBBB
-                    showToast("”FØ¸”sBBB");
+
+                    showToast("ï¿½Fï¿½Øï¿½ï¿½sï¿½Bï¿½Bï¿½B");
                 }
             }
         };
